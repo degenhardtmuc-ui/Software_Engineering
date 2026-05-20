@@ -1,0 +1,98 @@
+import random
+
+
+# Funktion 1: Spieler gibt 6 Zahlen ein
+def spieler_gibt_zahlen():
+    spieler_zahlen = []
+
+    while len(spieler_zahlen) < 6:
+        zahl = int(input("Gib eine Zahl zwischen 1 und 49 ein: "))
+
+        if zahl >= 1 and zahl <= 49:
+            if zahl not in spieler_zahlen:
+                spieler_zahlen.append(zahl)
+            else:
+                print("Diese Zahl hast du schon eingegeben.")
+        else:
+            print("Die Zahl muss zwischen 1 und 49 sein.")
+
+    return spieler_zahlen
+
+
+# Funktion 2: Computer erzeugt 6 Lottozahlen
+def computer_generiert_zahlen():
+    computer_zahlen = []
+
+    while len(computer_zahlen) < 6:
+        zahl = random.randint(1, 49)
+
+        if zahl not in computer_zahlen:
+            computer_zahlen.append(zahl)
+
+    return computer_zahlen
+
+
+# Funktion 3: gemeinsame Zahlen finden
+def gemeinsame_zahlen_finden(spieler_zahlen, computer_zahlen):
+    gemeinsame_zahlen = []
+
+    index = 0
+
+    while index < len(spieler_zahlen):
+        zahl = spieler_zahlen[index]
+
+        if zahl in computer_zahlen:
+            gemeinsame_zahlen.append(zahl)
+
+        index = index + 1
+
+    return gemeinsame_zahlen
+
+
+# Funktion 4: Ergebnis bewerten
+def ergebnis_auswerten(gemeinsame_zahlen):
+    anzahl = len(gemeinsame_zahlen)
+
+    if anzahl == 0:
+        print("Leider kein Treffer.")
+    elif anzahl == 1:
+        print("Du hast 1 richtige Zahl.")
+    elif anzahl == 2:
+        print("Du hast 2 richtige Zahlen.")
+    elif anzahl == 3:
+        print("Du hast 3 richtige Zahlen.")
+    elif anzahl == 4:
+        print("Super! Du hast 4 richtige Zahlen.")
+    elif anzahl == 5:
+        print("Sehr stark! Du hast 5 richtige Zahlen.")
+    elif anzahl == 6:
+        print("JACKPOT! Du hast 6 richtige Zahlen!")
+
+
+# Funktion 5: Lotto-Spiel starten
+def lotto_spiel_starten():
+    alle_ergebnisse = []
+
+    nochmal = "ja"
+
+    while nochmal == "ja":
+        spieler_zahlen = spieler_gibt_zahlen()
+        computer_zahlen = computer_generiert_zahlen()
+        gemeinsame_zahlen = gemeinsame_zahlen_finden(spieler_zahlen, computer_zahlen)
+
+        print("Deine Zahlen:", spieler_zahlen)
+        print("Lottozahlen:", computer_zahlen)
+        print("Gemeinsame Zahlen:", gemeinsame_zahlen)
+
+        ergebnis_auswerten(gemeinsame_zahlen)
+
+        ergebnis = [spieler_zahlen, computer_zahlen, gemeinsame_zahlen]
+        alle_ergebnisse.append(ergebnis)
+
+        nochmal = input("Willst du nochmal spielen? ja/nein: ")
+
+    print("Alle Ergebnisse:")
+    print(alle_ergebnisse)
+
+
+lotto_spiel_starten()
