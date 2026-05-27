@@ -1,0 +1,259 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "bc5adfa7-5cd1-45c1-bc59-517a03ac6a97",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# dictonary\n",
+    "\n",
+    "# ==============================\n",
+    "\n",
+    "# 1) Dic definieren: d = {key1:value1, keyN:valueN}\n",
+    "\n",
+    "# 2) Zugriff auf ein Element: d[keyX] => valueX oder KeyError\n",
+    "\n",
+    "# 3) Zugriff auf ein Element: d.get(keyX) => valueX oder None\n",
+    "\n",
+    "# 4) Zugriff auf ein Element: d.get(keyX, defaultX) => valueX oder defaultX\n",
+    "\n",
+    "# 5) Element modifizieren: d[keyX] = valueXNeu\n",
+    "\n",
+    "# 6) Element hinzufügen: d[keyY] = valueY\n",
+    "\n",
+    "# 7) Element hinzufügen: d.setdefault(keyY, defaultValue)=> liefert valueY, oder fügt (keyY:defaultValue)\n",
+    "\n",
+    "# 8) Dic2 zu Dic1 hinzufügen: d1.update(d2) <=> list1.extend(list2)\n",
+    "\n",
+    " \n",
+    "\n",
+    "# 9) alle keys bekommen: d.keys() => dic_key[key1, key2, keyN]\n",
+    "\n",
+    "# 10) alle values bekommen: d.values() => dic_value[value1, value2, valueN]\n",
+    "\n",
+    "# 11) alle keys und values bekommen: d.items() => dic_items[(key1, value1), (key2, value2), (keyN, valueN)]\n",
+    "\n",
+    "# 12) durchlaufen: for key, value in d.items():"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7240c513-e808-43df-9ab6-637a36d5a15a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "261aaef8-8e64-43aa-8d51-f863cacc8c18",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "472b9909-6a1a-4e4a-a3c6-17301468cc0e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "062136aa-fda2-40fe-938a-fc817b2505fa",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# set-operation\n",
+    "\n",
+    "# ==============================\n",
+    "\n",
+    "# 1) setname.add(element)\n",
+    "\n",
+    "# 2) setname.remove(element)\n",
+    "\n",
+    "# 3) setname.discard(element)\n",
+    "\n",
+    "# 4) setname.clear()\n",
+    "\n",
+    "# 5) len(setname)\n",
+    "\n",
+    " \n",
+    "\n",
+    "# Mathematische Funktionen mit SET\n",
+    "\n",
+    "# ==============================\n",
+    "\n",
+    "# 1) Vereinigung: set1 | set2 <=>  set2 | set1 oder set1.union(set2) <=> set2.union(set1)\n",
+    "\n",
+    "# 2) Schnittmenge: set1 & set2 <=> set2 & set1  oder set1.intersection(set2) <=> set2.intersection(set1)\n",
+    "\n",
+    "# 3) Differenz:  set1 - set2  oder set1.difference(set2)\n",
+    "\n",
+    "# 4) Symmetrische Differenz: set1 ^ set2  oder set1.symmetric_difference(set2)\n",
+    "\n",
+    "# Elemente, die in jeweils nur eine der Mengen sind (keine Gemeinsamkeiten!)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "12b30ada-7047-4faa-b6af-eafed55e60d1",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7006400f-d3ca-4559-a67f-fb3497fc6534",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "448596fd-db4d-4b3e-91aa-1590cb6973b1",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9fbeae3f-8992-4b6a-b139-3a889154b66e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "25b461e6-e650-4bf3-ba76-4c192576443a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "481e6a00-2381-4660-8774-c23e7a419741",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Listeoperation\n",
+    "\n",
+    "# ==============\n",
+    "\n",
+    "# listenname.append(element): element am Ende anhängen\n",
+    "\n",
+    "# listenname.insert(index, element): element an der Position index hinzufügen\n",
+    "\n",
+    "# liste1.extends(liste2): hängte liste2 an liste 1 an\n",
+    "\n",
+    "# listenname.remove(element): löscht ein Element aus der Liste\n",
+    "\n",
+    "# delete(listenname[index]): löscht das element an Position index\n",
+    "\n",
+    "# element = listenname.pop(index): löscht und liefert das element an Position index\n",
+    "\n",
+    "# listenname.clear(): löscht die ganze liste\n",
+    "\n",
+    "# liste2 = liste1.copy() : liefert eine kopie von liste 1\n",
+    "\n",
+    "# element in listenname : liefert true, wenn element in der liste ist\n",
+    "\n",
+    "# listenname.count(element)\n",
+    "\n",
+    "# liste1.sort(): sortiert die liste 1 aufsteigend\n",
+    "\n",
+    "# liste1.sort() und danach liste1.reverse(): sortiert die Liste absteigend\n",
+    "\n",
+    "# liste2 = sorted(liste1): liefert eine aufsteigend sortierte Kopie von liste 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d52eba20-1885-4339-bfe9-608c3104867c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5194d293-ae47-4834-abd5-046545643152",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "178642fd-1ec8-476d-85d5-1e2bc2b677e5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Tupel \n",
+    "\n",
+    "# =====\n",
+    "\n",
+    "# Tupel definieren: t = (e1, e2, e3) geordnet, kann Duplikate haben!\n",
+    "\n",
+    "# liste definieren: l = [e1, e2, e3]\n",
+    "\n",
+    "# Tupel haben nur Read-Only Operation: t[index] => liefert das Element an Position index\n",
+    "\n",
+    "# Zu einem Tupel kann ich keine neue Elemente hinzufügen oder löschen!\n",
+    "\n",
+    "# Zugriff auf ein Element: t[index] => liefert Element e \n",
+    "\n",
+    "# Liefere den index von einem Element => t.index(element)\n",
+    "\n",
+    "# Elemente zählen:  t.count(element) => wie oft element vorkommt!\n",
+    "\n",
+    "# len, max, min, sum\n",
+    "\n",
+    "# werte von zwei elementen vertauschen! x, y\n",
+    "\n",
+    "# x, y = y, x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0be1b65f-5b06-4794-9de0-20654def3854",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
