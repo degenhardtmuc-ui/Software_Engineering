@@ -1,0 +1,17 @@
+digraph memory_graph {
+	graph [fontname="Times-Roman" fontsize=14]
+	node [fontname="Times-Roman" fontsize=14 shape=plaintext]
+	edge [fontname="Times-Roman" fontsize=14]
+	node6279784640 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="lightcoral" PORT="table">
+    <TR><TD BORDER="0"><font color="#505050">0</font></TD><TD BORDER="1"> 3 </TD></TR>
+</TABLE>
+> xlabel=list]
+	node6279427904 [label=<
+<TABLE BORDER="3" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> zahlen </TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node6279427904:ref0 -> node6279784640:table [style=solid]
+}

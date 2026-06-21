@@ -1,0 +1,42 @@
+[build-system]
+requires = [
+    "setuptools>=80.4.0",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "mein_cookiecutter_projekt"
+version = "0.0.1"
+description = "Ein kleines Testprojekt mit Cookiecutter."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+
+authors = [
+    { name = "Daniel Degenhardt", email = "degenhardt.muc@gmail.com" }
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = []
+
+
+[project.urls]
+Homepage = "https://github.com/degenhardt-muc/mein-cookiecutter-projekt/"
+"Bug Tracker" = "https://github.com/degenhardt-muc/mein-cookiecutter-projekt/issues"
+
+
+[project.scripts]
+mein-cookiecutter-projekt = "mein_cookiecutter_projekt.__main__:main"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]

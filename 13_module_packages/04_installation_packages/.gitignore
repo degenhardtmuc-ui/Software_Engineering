@@ -1,0 +1,5 @@
+venv2/
+venv-workshop/
+__pycache__/
+*.pyc
+api-test/

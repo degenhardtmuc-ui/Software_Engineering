@@ -1,0 +1,22 @@
+
+# Jupyter automatische Checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python Cache
+__pycache__/
+**/__pycache__/
+.pytest_cache/
+.mypy_cache/
+
+# Virtuelle Umgebungen
+.venv/
+venv/
+
+# Build-Dateien
+dist/
+build/
+*.egg-info/
+
+# macOS
+.DS_Store

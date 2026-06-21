@@ -1,0 +1,237 @@
+digraph memory_graph {
+	graph [fontname="Times-Roman" fontsize=14]
+	node [fontname="Times-Roman" fontsize=14 shape=plaintext]
+	edge [fontname="Times-Roman" fontsize=14]
+	node4958756752 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="0" BGCOLOR="seagreen3" PORT="table">
+    <TR><TD BORDER="0">  </TD></TR>
+</TABLE>
+> xlabel=type]
+	node4404490176 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="0">  </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4404490368 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> config </TD><TD BORDER="1"> TraitType.default </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> parent </TD><TD BORDER="1"> TraitType.default </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4915380832 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="0" BGCOLOR="seagreen3" PORT="table">
+    <TR><TD BORDER="0">  </TD></TR>
+</TABLE>
+> xlabel=type]
+	node4341072312 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="0" BGCOLOR="orange" PORT="table">
+    <TR><TD BORDER="0">  </TD></TR>
+</TABLE>
+> xlabel=tuple]
+	node4367932160 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="0">  </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4367939072 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="0">  </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4367940608 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="0">  </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4368157584 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="seagreen1" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> klass </TD><TD BORDER="1" STYLE="ROUNDED"> default_args </TD><TD BORDER="1" STYLE="ROUNDED"> default_kwargs </TD><TD BORDER="1" STYLE="ROUNDED"> allow_none </TD><TD BORDER="1" STYLE="ROUNDED"> help </TD><TD BORDER="1" STYLE="ROUNDED"> metadata </TD><TD BORDER="1" STYLE="ROUNDED"> this_class </TD><TD BORDER="1" STYLE="ROUNDED"> name </TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD><TD BORDER="1"> None </TD><TD BORDER="1"> None </TD><TD BORDER="1"> True </TD><TD BORDER="1"> '' </TD><TD BORDER="1" PORT="ref1"> </TD><TD BORDER="1" PORT="ref2"> </TD><TD BORDER="1"> 'parent' </TD></TR>
+</TABLE>
+> xlabel=Instance]
+	node4368157584:ref0 -> node4915409440:table [style=solid]
+	node4368157584:ref1 -> node4367940608:table [style=solid]
+	node4368157584:ref2 -> node4915409440:table [style=solid]
+	node4367958416 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="orange" PORT="table">
+    <TR><TD BORDER="0"><font color="#505050">0</font></TD><TD BORDER="1"> 'config' </TD></TR>
+</TABLE>
+> xlabel=tuple]
+	node4367769888 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="seagreen1" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> trait_names </TD><TD BORDER="1" STYLE="ROUNDED"> type </TD><TD BORDER="1" STYLE="ROUNDED"> func </TD><TD BORDER="1" STYLE="ROUNDED"> this_class </TD><TD BORDER="1" STYLE="ROUNDED"> name </TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD><TD BORDER="1"> 'change' </TD><TD BORDER="1"> observe_compat.&lt;locals&gt;.compatible_observe... </TD><TD BORDER="1" PORT="ref1"> </TD><TD BORDER="1"> '_config_changed' </TD></TR>
+</TABLE>
+> xlabel=ObserveHandler]
+	node4367769888:ref0 -> node4367958416:table [style=solid]
+	node4367769888:ref1 -> node4915409440:table [style=solid]
+	node4368278464 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="0">  </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4368278592 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> config </TD><TD BORDER="1"> TraitType.default </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> parent </TD><TD BORDER="1"> TraitType.default </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4368278656 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> config </TD><TD BORDER="1" STYLE="ROUNDED"> parent </TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD><TD BORDER="1" PORT="ref1"> </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4368278656:ref0 -> node4367762832:table [style=solid]
+	node4368278656:ref1 -> node4368157584:table [style=solid]
+	node4368278720 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> parent </TD><TD BORDER="1"> None </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4367630848 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="lightcoral" PORT="table">
+    <TR><TD BORDER="0"><font color="#505050">0</font></TD><TD BORDER="0"><font color="#505050">1</font></TD><TD BORDER="0"><font color="#505050">2</font></TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD><TD BORDER="1" PORT="ref1"> </TD><TD BORDER="1" PORT="ref2"> </TD></TR>
+</TABLE>
+> xlabel=list]
+	node4367630848:ref0 -> node4367769888:table [style=solid]
+	node4367630848:ref1 -> node4367762832:table [style=solid]
+	node4367630848:ref2 -> node4368157584:table [style=solid]
+	node4367926528 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="lightcoral" PORT="table">
+    <TR><TD BORDER="0"><font color="#505050">0</font></TD><TD BORDER="1"> ObserveHandler.instance_init </TD></TR>
+    <TR><TD BORDER="0"><font color="#505050">1</font></TD><TD BORDER="1"> Instance.instance_init </TD></TR>
+    <TR><TD BORDER="0"><font color="#505050">2</font></TD><TD BORDER="1"> Instance.instance_init </TD></TR>
+</TABLE>
+> xlabel=list]
+	node4915409440 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="seagreen3" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> config </TD><TD BORDER="1" STYLE="ROUNDED"> parent </TD><TD BORDER="1" STYLE="ROUNDED"> _config_changed </TD><TD BORDER="1" STYLE="ROUNDED"> _trait_default_generators </TD><TD BORDER="1" STYLE="ROUNDED"> _all_trait_default_generators </TD><TD BORDER="1" STYLE="ROUNDED"> _traits </TD><TD BORDER="1" STYLE="ROUNDED"> _static_immutable_initial_values </TD><TD BORDER="1" STYLE="ROUNDED"> _descriptors </TD><TD BORDER="1" STYLE="ROUNDED"> _instance_inits </TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD><TD BORDER="1" PORT="ref1"> </TD><TD BORDER="1" PORT="ref2"> </TD><TD BORDER="1" PORT="ref3"> </TD><TD BORDER="1" PORT="ref4"> </TD><TD BORDER="1" PORT="ref5"> </TD><TD BORDER="1" PORT="ref6"> </TD><TD BORDER="1" PORT="ref7"> </TD><TD BORDER="1" PORT="ref8"> </TD></TR>
+</TABLE>
+> xlabel=MetaHasTraits]
+	node4915409440:ref0 -> node4367762832:table [style=solid]
+	node4915409440:ref1 -> node4368157584:table [style=solid]
+	node4915409440:ref2 -> node4367769888:table [style=solid]
+	node4915409440:ref3 -> node4368278464:table [style=solid]
+	node4915409440:ref4 -> node4368278592:table [style=solid]
+	node4915409440:ref5 -> node4368278656:table [style=solid]
+	node4915409440:ref6 -> node4368278720:table [style=solid]
+	node4915409440:ref7 -> node4367630848:table [style=solid]
+	node4915409440:ref8 -> node4367926528:table [style=solid]
+	node4367762832 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="seagreen1" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> klass </TD><TD BORDER="1" STYLE="ROUNDED"> default_args </TD><TD BORDER="1" STYLE="ROUNDED"> default_kwargs </TD><TD BORDER="1" STYLE="ROUNDED"> help </TD><TD BORDER="1" STYLE="ROUNDED"> metadata </TD><TD BORDER="1" STYLE="ROUNDED"> this_class </TD><TD BORDER="1" STYLE="ROUNDED"> name </TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD><TD BORDER="1" PORT="ref1"> </TD><TD BORDER="1" PORT="ref2"> </TD><TD BORDER="1"> '' </TD><TD BORDER="1" PORT="ref3"> </TD><TD BORDER="1" PORT="ref4"> </TD><TD BORDER="1"> 'config' </TD></TR>
+</TABLE>
+> xlabel=Instance]
+	node4367762832:ref0 -> node4915380832:table [style=solid]
+	node4367762832:ref1 -> node4341072312:table [style=solid]
+	node4367762832:ref2 -> node4367932160:table [style=solid]
+	node4367762832:ref3 -> node4367939072:table [style=solid]
+	node4367762832:ref4 -> node4915409440:table [style=solid]
+	node4404490432 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> config </TD><TD BORDER="1" STYLE="ROUNDED"> parent </TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD><TD BORDER="1" PORT="ref1"> </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4404490432:ref0 -> node4367762832:table [style=solid]
+	node4404490432:ref1 -> node4368157584:table [style=solid]
+	node4404490496 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> parent </TD><TD BORDER="1"> None </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4404485120 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="lightcoral" PORT="table">
+    <TR><TD BORDER="0"><font color="#505050">0</font></TD><TD BORDER="0"><font color="#505050">1</font></TD><TD BORDER="0"><font color="#505050">2</font></TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD><TD BORDER="1" PORT="ref1"> </TD><TD BORDER="1" PORT="ref2"> </TD></TR>
+</TABLE>
+> xlabel=list]
+	node4404485120:ref0 -> node4367769888:table [style=solid]
+	node4404485120:ref1 -> node4367762832:table [style=solid]
+	node4404485120:ref2 -> node4368157584:table [style=solid]
+	node4404484992 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="lightcoral" PORT="table">
+    <TR><TD BORDER="0"><font color="#505050">0</font></TD><TD BORDER="1"> ObserveHandler.instance_init </TD></TR>
+    <TR><TD BORDER="0"><font color="#505050">1</font></TD><TD BORDER="1"> Instance.instance_init </TD></TR>
+    <TR><TD BORDER="0"><font color="#505050">2</font></TD><TD BORDER="1"> Instance.instance_init </TD></TR>
+</TABLE>
+> xlabel=list]
+	node4404482112 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> pinfo </TD><TD BORDER="1"> 'pinfo' </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> pinfo2 </TD><TD BORDER="1"> 'pinfo2' </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> pdef </TD><TD BORDER="1"> 'pdef' </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> pdoc </TD><TD BORDER="1"> 'pdoc' </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> psource </TD><TD BORDER="1"> 'psource' </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> pfile </TD><TD BORDER="1"> 'pfile' </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> psearch </TD><TD BORDER="1"> 'psearch' </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> who_ls </TD><TD BORDER="1"> 'who_ls' </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> who </TD><TD BORDER="1"> 'who' </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> whos </TD><TD BORDER="1"> 'whos' </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> reset </TD><TD BORDER="1"> 'reset' </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> reset_selective </TD><TD BORDER="1"> 'reset_selective' </TD></TR>
+    <TR><TD BORDER="1" STYLE="ROUNDED"> xdel </TD><TD BORDER="1"> 'xdel' </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4404482176 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="0">  </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4404490816 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> line </TD><TD BORDER="1" STYLE="ROUNDED"> cell </TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD><TD BORDER="1" PORT="ref1"> </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4404490816:ref0 -> node4404482112:table [style=solid]
+	node4404490816:ref1 -> node4404482176:table [style=solid]
+	node4391567520 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="seagreen3" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> _trait_default_generators </TD><TD BORDER="1" STYLE="ROUNDED"> _all_trait_default_generators </TD><TD BORDER="1" STYLE="ROUNDED"> _traits </TD><TD BORDER="1" STYLE="ROUNDED"> _static_immutable_initial_values </TD><TD BORDER="1" STYLE="ROUNDED"> _descriptors </TD><TD BORDER="1" STYLE="ROUNDED"> _instance_inits </TD><TD BORDER="1" STYLE="ROUNDED"> registered </TD><TD BORDER="1" STYLE="ROUNDED"> magics </TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD><TD BORDER="1" PORT="ref1"> </TD><TD BORDER="1" PORT="ref2"> </TD><TD BORDER="1" PORT="ref3"> </TD><TD BORDER="1" PORT="ref4"> </TD><TD BORDER="1" PORT="ref5"> </TD><TD BORDER="1"> True </TD><TD BORDER="1" PORT="ref6"> </TD></TR>
+</TABLE>
+> xlabel=MetaHasTraits]
+	node4391567520:ref0 -> node4404490176:table [style=solid]
+	node4391567520:ref1 -> node4404490368:table [style=solid]
+	node4391567520:ref2 -> node4404490432:table [style=solid]
+	node4391567520:ref3 -> node4404490496:table [style=solid]
+	node4391567520:ref4 -> node4404485120:table [style=solid]
+	node4391567520:ref5 -> node4404484992:table [style=solid]
+	node4391567520:ref6 -> node4404490816:table [style=solid]
+	node4415414272 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="lightcoral" PORT="table">
+    <TR><TD BORDER="0"><font color="#505050">0</font></TD><TD BORDER="1"> 1 </TD></TR>
+    <TR><TD BORDER="0"><font color="#505050">1</font></TD><TD BORDER="1"> 2 </TD></TR>
+    <TR><TD BORDER="0"><font color="#505050">2</font></TD><TD BORDER="1"> 3 </TD></TR>
+</TABLE>
+> xlabel=list]
+	node4413699520 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="lightcoral" PORT="table">
+    <TR><TD BORDER="0"><font color="#505050">0</font></TD><TD BORDER="1"> 1 </TD></TR>
+    <TR><TD BORDER="0"><font color="#505050">1</font></TD><TD BORDER="1"> 2 </TD></TR>
+    <TR><TD BORDER="0"><font color="#505050">2</font></TD><TD BORDER="1"> 3 </TD></TR>
+    <TR><TD BORDER="0"><font color="#505050">3</font></TD><TD BORDER="1"> 4 </TD></TR>
+</TABLE>
+> xlabel=list]
+	node5962354368 [label=<
+<TABLE BORDER="3" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> islice </TD><TD BORDER="1" STYLE="ROUNDED"> NamespaceMagics </TD><TD BORDER="1" STYLE="ROUNDED"> zahlen </TD><TD BORDER="1" STYLE="ROUNDED"> zweite_liste </TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD><TD BORDER="1" PORT="ref1"> </TD><TD BORDER="1" PORT="ref2"> </TD><TD BORDER="1" PORT="ref3"> </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node5962354368:ref0 -> node4958756752:table [style=solid]
+	node5962354368:ref1 -> node4391567520:table [style=solid]
+	node5962354368:ref2 -> node4415414272:table [style=solid]
+	node5962354368:ref3 -> node4413699520:table [style=solid]
+subgraph { rank=same; node4958756752 -> node4391567520 -> node4415414272 -> node4413699520[weight=10, style=invis]; }
+subgraph { rank=same; node4404490176 -> node4404490368 -> node4404490432 -> node4404490496 -> node4404485120 -> node4404484992 -> node4404490816[weight=10, style=invis]; }
+subgraph { rank=same; node4367762832 -> node4404482112 -> node4404482176[weight=10, style=invis]; }
+subgraph { rank=same; node4915380832 -> node4341072312 -> node4367932160 -> node4367939072 -> node4915409440[weight=10, style=invis]; }
+subgraph { rank=same; node4368157584 -> node4367769888 -> node4368278464 -> node4368278592 -> node4368278656 -> node4368278720 -> node4367630848 -> node4367926528[weight=10, style=invis]; }
+subgraph { rank=same; node4367940608 -> node4367958416[weight=10, style=invis]; }
+}

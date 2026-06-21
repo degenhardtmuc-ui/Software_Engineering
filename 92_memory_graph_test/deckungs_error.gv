@@ -1,0 +1,17 @@
+digraph memory_graph {
+	graph [fontname="Times-Roman" fontsize=14]
+	node [fontname="Times-Roman" fontsize=14 shape=plaintext]
+	edge [fontname="Times-Roman" fontsize=14]
+	node6355772576 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#ff5555" PORT="table">
+    <TR><TD BORDER="1"> <FONT FACE="Courier">DeckungsError: Sie haben nicht genug Guthabnen! Kontostand:1000 Euro, Geforderter Betrag:800 Euro</FONT> </TD></TR>
+</TABLE>
+> xlabel=DeckungsError]
+	node4430189760 [label=<
+<TABLE BORDER="3" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> meine_konto </TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node4430189760:ref0 -> node6355772576:table [style=solid]
+}
