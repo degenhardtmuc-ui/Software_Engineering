@@ -1,0 +1,228 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "c15a58a4-a2a5-463f-802e-069d6f076c7d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class Einkaufswagen: # Klasse A\n",
+    "    def __init__(self):\n",
+    "        self.artikel_liste = []\n",
+    "\n",
+    "    def füge_neuen_artikel_hinzu(self, name: str, preis: float, anzahl: int):\n",
+    "        artikel = Artikel(name, preis, anzahl)\n",
+    "        self.artikel_liste.append(artikel)\n",
+    "        print(f\"{anzahl} x {name} wurde hinzugefügt\")\n",
+    "        \n",
+    "        return artikel\n",
+    "\n",
+    "    def berechne_gesamtpreis(self):\n",
+    "        gesamtpreis = 0\n",
+    "\n",
+    "        for artikel in self.artikel_liste:\n",
+    "            gesamtpreis = gesamtpreis + artikel.preis * artikel.anzahl\n",
+    "\n",
+    "        return gesamtpreis"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bc4c2a45-9ac4-46bf-b587-c3e7236db201",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "43def158-c36a-4ec2-bca5-5a9c3d6b560d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class Artikel: # Klasse B\n",
+    "    def __init__(self, name: str, preis: float, anzahl: int):\n",
+    "        self.name = name\n",
+    "        self.preis = preis\n",
+    "        self.anzahl = anzahl"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7c2178c8-07bd-44ea-9c9c-e901fe9325ef",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "ed19e9ce-69e9-4970-9889-c4df6bccc761",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mein_einkaufswagen = Einkaufswagen()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3cf6e68d-ef6d-43d9-b749-8ca4383ad5f2",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "fcf41df4-e747-4306-9bc3-0182ebe3753a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3 x Wassermelone wurde hinzugefügt\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "<__main__.Artikel at 0x14743ecf0>"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mein_einkaufswagen.füge_neuen_artikel_hinzu(\"Wassermelone\", 4.50, 3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "8edbd4f6-a3b1-47e0-8f59-fd2307800363",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 x Kirschen wurde hinzugefügt\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "<__main__.Artikel at 0x147709d10>"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mein_einkaufswagen.füge_neuen_artikel_hinzu(\"Kirschen\", 3.80, 1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "1bc55c37-0e71-4b2c-92fe-1d4b47239660",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2 x Eis wurde hinzugefügt\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "<__main__.Artikel at 0x147709a90>"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mein_einkaufswagen.füge_neuen_artikel_hinzu(\"Eis\", 1.20, 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "02159359-132f-4a40-862a-8ed2a4125ad6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "gesamtpreis = mein_einkaufswagen.berechne_gesamtpreis()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "527d703e-a08a-4cd7-9813-a71987bf0d25",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Gesamtpreis: 19.7 Eruo\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\"Gesamtpreis: {gesamtpreis:} Eruo\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2530ff7e-9815-4215-9413-fc9ad376c7e0",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "23f38558-508f-4537-9c20-d864af4de1b7",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
