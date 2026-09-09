@@ -1,0 +1,12 @@
+[project]
+name = "student-grade-tracker"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "gradio>=6.20.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

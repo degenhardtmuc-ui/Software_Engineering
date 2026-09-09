@@ -1,0 +1,22 @@
+Die wichtigsten Unterschiede zum Lernen
+Thema	Denk immer an
+SRP	Eine Klasse → eine klare Verantwortung
+High Cohesion	Zusammengehörige Dinge zusammen
+Low Coupling	Möglichst wenige Abhängigkeiten
+Pure Fabrication	Technische Hilfsklasse bewusst einführen
+Observer	Einer ändert sich → viele erfahren es
+Strategy	Gleiches Ziel → verschiedene austauschbare Wege
+attach()	Observer anmelden
+detach()	Observer abmelden
+notify()	Observer informieren
+update()	Observer reagiert
+set_strategy()	Strategy austauschen
+Callable	Eine Funktion kann als Strategy dienen
+
+Für Observer vs. Strategy würde ich mir nur zwei Sätze merken:
+
+Observer: „Wenn sich etwas ändert, sollen andere automatisch informiert werden.“
+
+Strategy: „Ich möchte für dieselbe Aufgabe zwischen verschiedenen Verhaltensweisen bzw. Algorithmen wählen können.“
+
+Damit kannst du die beiden Patterns im Kurs praktisch immer auseinanderhalten.
