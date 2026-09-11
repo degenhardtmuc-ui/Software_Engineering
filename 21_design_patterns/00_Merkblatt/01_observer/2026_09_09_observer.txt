@@ -27,15 +27,12 @@ unübersichtlich werden.
 | weniger Nachfragen nötig       | Observer entscheidet selbst, was er braucht |
 
 
-„Beim Push Observer werden die Änderungsdaten direkt an update() übergeben. Beim Pull Observer wird nur die Änderung signalisiert und der Observer holt sich die benötigten Daten anschließend selbst vom Subject.“
-
-Was bedeutet die Folie „Konsequenzen“?
-
-Die wichtigsten Punkte würde ich so übersetzen:
+Beim Push Observer werden die Änderungsdaten direkt an update() übergeben. 
+Beim Pull Observer wird nur die Änderung signalisiert und der Observer holt sich die benötigten Daten anschließend selbst vom Subject.
 
 Subject und Observer sind unabhängig: Der Producer kennt nicht PrintingObserver konkret. Er kennt nur das Observer-Interface.
 
-Neue Observer einfach hinzufügen: Später könntest du beispielsweise schreiben:
+Neue Observer einfach hinzufügen:
 
 producer.attach(PrintingObserver())
 producer.attach(CountingObserver())
@@ -47,7 +44,7 @@ Broadcast: Ein notify() kann viele Observer gleichzeitig informieren.
 
 Nachteil – unerwartete Updates: Bei vielen Observern kann schwer nachvollziehbar werden, welche Aktionen ein einziges Ereignis auslöst.
 
-Praxisbeispiel auf eurer Folie: Event Listener
+Praxisbeispiel: Event Listener
 
 Ein Button in einer GUI ist ein klassisches Beispiel:
 
@@ -61,7 +58,7 @@ reagieren
 
 Das Prinzip ist sehr ähnlich zum Observer Pattern.
 
-„Verwandte Patterns“ auf eurer Folie
+„Verwandte Patterns“
 
 Mediator: Wenn sehr viele Subjects und Observer kompliziert miteinander kommunizieren, kann ein Vermittler dazwischen gesetzt werden.
 
@@ -73,4 +70,5 @@ Observer
 
 Der Mediator koordiniert dann die Kommunikation.
 
-Singleton: sorgt dagegen dafür, dass von einer bestimmten Klasse nur eine zentrale Instanz verwendet wird. Das ist ein anderes Pattern; es kann aber mit Observer kombiniert werden.
+Singleton: sorgt dagegen dafür, dass von einer bestimmten Klasse nur eine zentrale Instanz verwendet wird. 
+Das ist ein anderes Pattern; es kann aber mit Observer kombiniert werden.

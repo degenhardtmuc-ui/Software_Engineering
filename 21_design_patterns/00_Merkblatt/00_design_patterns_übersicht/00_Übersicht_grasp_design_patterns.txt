@@ -1,5 +1,3 @@
-Die wichtigsten Unterschiede zum Lernen
-Thema	Denk immer an
 SRP	Eine Klasse → eine klare Verantwortung
 High Cohesion	Zusammengehörige Dinge zusammen
 Low Coupling	Möglichst wenige Abhängigkeiten
@@ -13,10 +11,8 @@ update()	Observer reagiert
 set_strategy()	Strategy austauschen
 Callable	Eine Funktion kann als Strategy dienen
 
-Für Observer vs. Strategy würde ich mir nur zwei Sätze merken:
 
 Observer: „Wenn sich etwas ändert, sollen andere automatisch informiert werden.“
 
 Strategy: „Ich möchte für dieselbe Aufgabe zwischen verschiedenen Verhaltensweisen bzw. Algorithmen wählen können.“
 
-Damit kannst du die beiden Patterns im Kurs praktisch immer auseinanderhalten.
