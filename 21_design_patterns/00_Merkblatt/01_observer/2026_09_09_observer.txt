@@ -1,0 +1,76 @@
+OBSERVER
+Einer ändert sich → viele reagieren.
+
+attach() = anmelden
+detach() = abmelden
+notify() = informieren
+update() = reagieren
+
+PUSH:
+Subject → gibt Daten → Observer
+
+PULL:
+Subject → meldet Änderung → Observer holt Daten
+
+VORTEIL:
+Low Coupling + neue Observer leicht ergänzbar
+
+NACHTEIL:
+Viele automatische Updates können
+unübersichtlich werden.
+
+| Push                           | Pull                                        |
+| ------------------------------ | ------------------------------------------- |
+| Subject **schickt Daten**      | Observer **holt Daten**                     |
+| `update(item)`                 | z. B. `update(producer)`                    |
+| Observer bekommt direkt `Item` | Observer liest `producer.last_item`         |
+| weniger Nachfragen nötig       | Observer entscheidet selbst, was er braucht |
+
+
+„Beim Push Observer werden die Änderungsdaten direkt an update() übergeben. Beim Pull Observer wird nur die Änderung signalisiert und der Observer holt sich die benötigten Daten anschließend selbst vom Subject.“
+
+Was bedeutet die Folie „Konsequenzen“?
+
+Die wichtigsten Punkte würde ich so übersetzen:
+
+Subject und Observer sind unabhängig: Der Producer kennt nicht PrintingObserver konkret. Er kennt nur das Observer-Interface.
+
+Neue Observer einfach hinzufügen: Später könntest du beispielsweise schreiben:
+
+producer.attach(PrintingObserver())
+producer.attach(CountingObserver())
+producer.attach(DatabaseObserver())
+
+ohne Producer umzubauen.
+
+Broadcast: Ein notify() kann viele Observer gleichzeitig informieren.
+
+Nachteil – unerwartete Updates: Bei vielen Observern kann schwer nachvollziehbar werden, welche Aktionen ein einziges Ereignis auslöst.
+
+Praxisbeispiel auf eurer Folie: Event Listener
+
+Ein Button in einer GUI ist ein klassisches Beispiel:
+
+Button geklickt
+      ↓
+   Ereignis
+      ↓
+registrierte Listener
+      ↓
+reagieren
+
+Das Prinzip ist sehr ähnlich zum Observer Pattern.
+
+„Verwandte Patterns“ auf eurer Folie
+
+Mediator: Wenn sehr viele Subjects und Observer kompliziert miteinander kommunizieren, kann ein Vermittler dazwischen gesetzt werden.
+
+Subject
+   ↓
+Mediator
+   ↓
+Observer
+
+Der Mediator koordiniert dann die Kommunikation.
+
+Singleton: sorgt dagegen dafür, dass von einer bestimmten Klasse nur eine zentrale Instanz verwendet wird. Das ist ein anderes Pattern; es kann aber mit Observer kombiniert werden.

@@ -1,0 +1,34 @@
+STRATEGY PATTERN
+
+Problem:
+Ich habe mehrere Möglichkeiten,
+dieselbe Aufgabe auszuführen.
+
+              Strategy
+                  │
+        ┌─────────┼─────────┐
+        ↓         ↓         ↓
+    Strategie A   B         C
+          \       |       /
+              Context
+
+Context
+= benutzt die Strategie
+
+Strategy
+= gemeinsamer Vertrag
+
+ConcreteStrategy
+= konkreter Algorithmus
+
+Vorteil:
+Strategie austauschbar,
+Context bleibt unverändert
+
+
+
+
+
+Strategy = „WIE soll etwas gemacht werden?“
+
+Observer = „WER soll bei einer Änderung informiert werden?“

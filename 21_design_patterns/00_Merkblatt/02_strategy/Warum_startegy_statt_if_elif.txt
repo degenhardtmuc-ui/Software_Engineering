@@ -1,0 +1,57 @@
+if self.content_kind == "summary":
+    self.publish_summary(content)
+
+elif self.content_kind == "full":
+    self.publish_full(content)
+
+else:
+    raise ValueError(...)
+
+Bei zwei Fällen ist das noch übersichtlich. Aber irgendwann entsteht:
+
+if ...
+elif ...
+elif ...
+elif ...
+elif ...
+
+Mit Strategy:
+
+PublishStrategy
+      │
+ ┌────┴────┐
+ ↓         ↓
+Summary   Full
+Strategy  Strategy
+
+Der Context muss nicht ständig erweitert werden.
+
+Merksatz:
+
+Viele austauschbare if/elif-Verhaltensweisen sind ein Hinweis darauf, dass Strategy sinnvoll sein könnte.
+
+Nicht jedes if muss allerdings durch Strategy ersetzt werden.
+
+=======================================================
+
+Blog
+ │
+ └── strategy
+       │
+       ├── Text umbrechen
+       ├── überall umbrechen
+       └── Text abschneiden
+
+Auf deiner Folie wird beispielsweise dynamisch:
+
+blog.strategy = BreakAnywhereStrategy()
+
+gesetzt.
+
+Später wird sogar eine Funktion verwendet:
+
+blog.strategy = textwrap.wrap
+
+Das zeigt wieder die Python-Besonderheit:
+
+Eine Strategy muss in Python nicht zwingend eine Klasse sein. Eine passende Funktion kann ebenfalls eine Strategie darstellen.
